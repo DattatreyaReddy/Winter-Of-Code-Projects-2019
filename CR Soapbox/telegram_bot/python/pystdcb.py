@@ -278,7 +278,7 @@ class stdchat:
             else:
                 update.message.reply_text(text=text)
         else:
-            update.message.reply_text(text="No Classes on {}".format((update.message.text).capitalize()))
+            update.message.reply_text(text="Please send *A Valid Day*\nfrom the given list ", parse_mode = 'Markdown')
         return self.Day_MH
     
     def daykb (self, update, context):
